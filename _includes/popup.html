@@ -1,0 +1,67 @@
+<div id="cookie-banner">
+    This website uses a global distribution network (CDN) to reliably display content. When you use the website, some of your non-personal data, such as IP address and page usage information, may be transmitted over this network to ensure the proper functioning of the website.
+    You can find more information in the
+    <a href="/imprint#github-pages-und-cdn-nutzung"
+       target="_blank" rel="noopener noreferrer nofollow">
+        imprint</a><br><br>
+
+
+    This website uses cookies to ensure proper functionality. You can choose to accept only essential cookies, which are necessary for the website to function correctly, or accept all cookies, which allows us to use them for analysis and to improve your experience.<br><br>
+    <br>
+    <button class="btn btn--warning" id="cookie-confirm-btn">Accept All Cookies</button>
+    <button class="btn btn--secondary" id="cookie-deny-btn">Accept Essential Only</button>
+</div>
+
+<div id="cookie-reopen-btn" class="cookie-reopen-btn">
+    <i class="fas fa-cookie-bite"></i>
+</div>
+
+
+<!-- JavaScript-code for the cookie consent-banner -->
+<script>
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function hideCookieBanner() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        document.getElementById('cookie-reopen-btn').style.display = 'block';
+    }
+
+    function showCookieBanner() {
+        document.getElementById('cookie-banner').style.display = 'block';
+        document.getElementById('cookie-reopen-btn').style.display = 'none';
+    }
+
+    // Initial check
+    const cookieConsent = getCookie('cookieConsent');
+    if (cookieConsent === '1') {
+        hideCookieBanner();
+    } else {
+        showCookieBanner();
+    }
+
+    document.getElementById('cookie-confirm-btn').addEventListener('click', function() {
+        setCookie('cookieConsent', '1', 1);
+        hideCookieBanner();
+    });
+
+    document.getElementById('cookie-deny-btn').addEventListener('click', function() {
+        setCookie('cookieConsent', '0', 1);
+        hideCookieBanner();
+    });
+
+    document.getElementById('cookie-reopen-btn').addEventListener('click', showCookieBanner);
+</script>

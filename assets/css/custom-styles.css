@@ -1,0 +1,582 @@
+/* Custom stylesheet, add your own styles here */
+
+.cookie-reopen-btn {
+    position: fixed;
+        bottom: 20px;
+    right: 20px;
+    background-color: #333333; /* Dark Grey */
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none; /* Hidden by default, shown by JS */
+}
+
+.cookie-reopen-btn:hover {
+    background-color: #B3282D; /* Red */
+}
+
+/* Hero Tagline */
+#hero-section .page__lead {
+    font-size: 2em;
+    font-weight: bold;
+    color: #430098; /* Brand Purple */
+}
+
+/* Body Mind Heart Spirit emphasis */
+#what-strength4life-is .page__lead {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Testimonial Quotes */
+.testimonial-quote {
+    border-left: 5px solid #B3282D; /* Brand Red */
+    background-color: rgba(179, 40, 45, 0.05); /* Light Red */
+    padding: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+/* Image Container (Rectangular) */
+.image-container {
+    width: 100%;
+    max-width: 400px; /* Limit width */
+    margin: 20px auto; /* Center and add vertical margin */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#about-me-teaser p {
+    margin-bottom: 0.5em; /* Reduce space between paragraphs */
+}
+
+#about-me-teaser .btn {
+    margin-top: 0.5em; /* Reduce space above button */
+}
+
+
+
+
+
+
+
+.german-intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5em 0;
+}
+
+.german-intro-image {
+    flex: 1 1 50%;
+    background: url('/assets/images/jon.webp') center center / cover no-repeat;
+}
+
+.german-intro-box {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    background: #f9f9f9; /* light background for box */
+}
+
+.german-intro-box h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .german-intro-container {
+        flex-direction: column;
+    }
+    .german-intro-image,
+    .german-intro-box {
+        flex: 1 1 100%;
+        min-height: 250px; /* keep image visible on mobile */
+    }
+}
+
+
+.home-heading {
+    font-size: 260%
+}
+
+.home-subheading {
+    margin-top: -10px
+}
+
+.testimonial-div {
+    text-align:center;
+    margin:2.5em 0;
+}
+
+.testimonial {
+    font-size:1.2em;
+    font-style:italic;
+    margin-bottom:0
+}
+
+
+.mobile-break {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-break {
+        display: inline;
+    }
+}
+
+.s4l-more {
+    margin-top:1.5rem;
+    text-align:left;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+.short-bio {
+    max-width: 800px;
+    margin: 3rem auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.short-bio p {
+    margin-bottom: 1.2em;
+}
+
+
+
+
+/* Force headings in purple section to white */
+.alternative-color .approach h1,
+.alternative-color .approach h2,
+.alternative-color .approach h3 {
+    color: #fff;
+}
+
+.approach ul {
+    margin: 0 0 1.5rem 1.25rem;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Blockquotes styling */
+.approach blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid rgba(255,255,255,0.4);
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* All images left-aligned with same style */
+.approach-media {
+    margin: 2rem 0;
+}
+.approach-media img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0; /* remove auto-centering */
+}
+
+.pillars-highlight {
+    color: #b3282d;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+.approach-media a {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Reset alignment inside approach section */
+.approach {
+    text-align: left;
+}
+
+
+
+.closing-quote {
+    background: #b3282d; /* your red */
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* ABOUT PAGE ONLY */
+
+/* Ensure headings in alternative sections stay white */
+.alternative-color.about h1,
+.alternative-color.about h2,
+.alternative-color.about h3,
+.alternative-color.about h4,
+.alternative-color.about h5,
+.alternative-color.about h6 {
+    color: #fff;
+}
+
+/* Media containers */
+.about-media {
+    margin: 2rem 0;
+}
+.about-media img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Center alignment modifier */
+.about-center {
+    text-align: center;
+}
+.about-center .about-media img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Closing quote */
+.about-quote {
+    background-color: #b3282d; /* red highlight */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-style: italic;
+    text-align: center;
+}
+.about-quote a {
+    margin-top: 1rem;
+    display: inline-block;
+    font-style: normal;
+}
+
+
+
+
+/* ABOUT PAGE ONLY */
+
+/* Ensure headings in alternative sections stay white */
+.alternative-color.about h1,
+.alternative-color.about h2,
+.alternative-color.about h3,
+.alternative-color.about h4,
+.alternative-color.about h5,
+.alternative-color.about h6 {
+    color: #fff;
+}
+
+/* Media containers */
+.about-media {
+    margin: 2rem 0;
+}
+.about-media img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Center alignment modifier */
+.about-center {
+    text-align: center;
+}
+.about-center .about-media img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Closing quote */
+.about-quote {
+    background-color: #b3282d; /* red highlight */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-style: italic;
+    text-align: center;
+}
+.about-quote a {
+    margin-top: 1rem;
+    display: inline-block;
+    font-style: normal;
+}
+
+
+/* Centered media for about page */
+.about-media-center img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Red blockquote styling */
+.about-quote-red {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #b3282d; /* red sideline */
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+
+.about-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 in a row */
+    gap: 1rem;
+}
+
+.about-gallery figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* perfect square container */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.about-gallery a,
+.about-gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.about-gallery img {
+    object-fit: cover; /* crop neatly into square */
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Remove bullets only for qualifications list */
+.about-qualifications {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-qualifications li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+/* Coaching for Individuals (centered layout) */
+.indiv { text-align: center; }
+
+.indiv-list {
+    display: inline-block;
+    text-align: left;
+    margin: 1rem auto;
+    padding: 0;
+    line-height: 1.6;
+}
+.indiv-list li { margin: 0.25rem 0; }
+
+/* Center images */
+.indiv-media {
+    margin: 0.5rem auto;
+    text-align: center;
+}
+.indiv-media img {
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Testimonial quote (red sideline) */
+.indiv-quote-red {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #b3282d;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Closing CTA (red box) */
+.indiv-closing {
+    background: #b3282d;
+    color: #fff;
+    padding: 1.25rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-style: italic;
+}
+.indiv-closing a { margin-top: 0.75rem; display: inline-block; font-style: normal; }
+
+
+/* Center lightbox images as well */
+.indiv-media a {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.indiv-media a img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Contact page form styling */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.contact-form .form-row {
+    margin-bottom: 1.25rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b3282d; /* brand red */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(179, 40, 45, 0.2);
+}
+
+.contact-form button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+
+
+
+/* Business page styles */
+.business blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #6a1b9a;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.business-quote-red {
+    border-left-color: #b3282d;
+}
+
+.business-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.business-list li {
+    margin: 0.25rem 0;
+}
+
+.business-closing {
+    background: #b3282d;
+    color: #fff;
+    padding: 1.25rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-style: italic;
+}
+.business-closing a {
+    margin-top: 0.75rem;
+    display: inline-block;
+}
+
+
+
+
+/* Travel4Life page styles */
+
+
+/* Highlights list */
+.travel-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.travel-highlights li {
+    background: #f7f7f7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+
+
+/* Three-column box layout for indiv levels */
+.box-third {
+    flex: 1 1 30%;
+    margin: 0.5rem;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .box-third {
+        flex: 1 1 100%;
+    }
+}
